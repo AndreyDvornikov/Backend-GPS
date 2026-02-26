@@ -1,0 +1,5 @@
+/home/avadik/Programming/Visual/Backend-GPS/build/CMakeFiles/imgui.dir
+/home/avadik/Programming/Visual/Backend-GPS/build/CMakeFiles/implot.dir
+/home/avadik/Programming/Visual/Backend-GPS/build/CMakeFiles/main.dir
+/home/avadik/Programming/Visual/Backend-GPS/build/CMakeFiles/edit_cache.dir
+/home/avadik/Programming/Visual/Backend-GPS/build/CMakeFiles/rebuild_cache.dir
