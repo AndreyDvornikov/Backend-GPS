@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/avadik/Programming/Visual/Backend-GPS/include -I/home/avadik/Programming/Visual/Backend-GPS/external/imgui -I/home/avadik/Programming/Visual/Backend-GPS/external/imgui/backends -I/home/avadik/Programming/Visual/Backend-GPS/external/implot -isystem /usr/include/SDL2
+CXX_INCLUDES = -I/home/avadik/Programming/Visual/Backend-GPS/include -I/usr/include/postgresql -I/home/avadik/Programming/Visual/Backend-GPS/external/imgui -I/home/avadik/Programming/Visual/Backend-GPS/external/imgui/backends -I/home/avadik/Programming/Visual/Backend-GPS/external/implot -isystem /usr/include/SDL2
 
 CXX_FLAGS = -std=gnu++17
 

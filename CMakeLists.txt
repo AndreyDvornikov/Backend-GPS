@@ -1,3 +1,4 @@
+find_package(CURL REQUIRED)
 cmake_minimum_required(VERSION 3.14)
 project(MyProjectName)
 
@@ -11,9 +12,9 @@ find_package(SDL2 REQUIRED)
 include_directories(${SDL2_INCLUDE_DIRS})
 find_package(OpenGL REQUIRED)
 find_package(GLEW REQUIRED)
-find_package(PkgConfig REQUIRED)
-pkg_check_modules(ZMQ REQUIRED libzmq)
-include_directories(${GLEW_INCLUDE_DIRS} ${INCLUDE_DIR})
+find_package(Threads REQUIRED)
+find_package(PostgreSQL REQUIRED)
+include_directories(${GLEW_INCLUDE_DIRS} ${INCLUDE_DIR} ${PostgreSQL_INCLUDE_DIRS})
 
 add_library(imgui STATIC
     ${THIRD_PARTY_DIR}/imgui/imgui.cpp
@@ -44,11 +45,12 @@ target_compile_options(implot PRIVATE -fPIC)
 
 add_executable(main ${SRC_DIR}/main.cpp)
 
-target_link_libraries(main PRIVATE 
+target_link_libraries(main PRIVATE CURL::libcurl 
     imgui 
     implot
-    ${ZMQ_LIBRARIES} 
+    ${PostgreSQL_LIBRARIES}
     ${SDL2_LIBRARIES} 
     ${OPENGL_LIBRARIES} 
     ${GLEW_LIBRARIES}
+    Threads::Threads
 )

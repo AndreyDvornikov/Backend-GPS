@@ -92,8 +92,10 @@ main_EXTERNAL_OBJECTS =
 
 main: CMakeFiles/main.dir/src/main.cpp.o
 main: CMakeFiles/main.dir/build.make
+main: /usr/lib/x86_64-linux-gnu/libcurl.so
 main: libimgui.a
 main: libimplot.a
+main: /usr/lib/x86_64-linux-gnu/libpq.so
 main: /usr/lib/x86_64-linux-gnu/libSDL2.so
 main: /usr/lib/x86_64-linux-gnu/libOpenGL.so
 main: /usr/lib/x86_64-linux-gnu/libGLX.so
