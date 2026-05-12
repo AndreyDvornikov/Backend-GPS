@@ -840,8 +840,9 @@ void RunGui(Database& db) {
     std::deque<LoadedTile> readyTiles;
     std::mutex readyMutex;
 
-    // Фоновый воркер – загружает тайлы из очереди запросов
-    auto downloadWorker = [&]() {
+    const int NUM_WORKERS = 4;
+
+    auto downloadWorker = [&](int workerId) {
         while (gRunning.load()) {
             TileRequest req;
             bool hasWork = false;
@@ -859,19 +860,20 @@ void RunGui(Database& db) {
             }
 
             std::string url = "https://tile.openstreetmap.org/" + std::to_string(req.z) + "/" +
-                              std::to_string(req.x) + "/" + std::to_string(req.y) + ".png";
+                            std::to_string(req.x) + "/" + std::to_string(req.y) + ".png";
             auto data = DownloadTile(url);
             if (!data.empty()) {
                 std::lock_guard<std::mutex> lock(readyMutex);
                 readyTiles.push_back({req.z, req.x, req.y, std::move(data)});
             }
-
-            std::this_thread::sleep_for(std::chrono::milliseconds(5));
         }
     };
 
-    std::thread worker(downloadWorker);
-    worker.detach();
+    std::vector<std::thread> workers;
+    for (int i = 0; i < NUM_WORKERS; ++i)
+        workers.emplace_back(downloadWorker, i);
+    for (auto& w : workers)
+        w.detach();
 
     // ---------- Основной цикл ----------
     while (gRunning.load()) {
