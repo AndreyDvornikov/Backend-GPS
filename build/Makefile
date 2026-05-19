@@ -395,6 +395,270 @@ external/implot/implot_items.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/implot.dir/build.make CMakeFiles/implot.dir/external/implot/implot_items.cpp.s
 .PHONY : external/implot/implot_items.cpp.s
 
+src/CurlUtils.o: src/CurlUtils.cpp.o
+.PHONY : src/CurlUtils.o
+
+# target to build an object file
+src/CurlUtils.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/CurlUtils.cpp.o
+.PHONY : src/CurlUtils.cpp.o
+
+src/CurlUtils.i: src/CurlUtils.cpp.i
+.PHONY : src/CurlUtils.i
+
+# target to preprocess a source file
+src/CurlUtils.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/CurlUtils.cpp.i
+.PHONY : src/CurlUtils.cpp.i
+
+src/CurlUtils.s: src/CurlUtils.cpp.s
+.PHONY : src/CurlUtils.s
+
+# target to generate assembly for a file
+src/CurlUtils.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/CurlUtils.cpp.s
+.PHONY : src/CurlUtils.cpp.s
+
+src/Database.o: src/Database.cpp.o
+.PHONY : src/Database.o
+
+# target to build an object file
+src/Database.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/Database.cpp.o
+.PHONY : src/Database.cpp.o
+
+src/Database.i: src/Database.cpp.i
+.PHONY : src/Database.i
+
+# target to preprocess a source file
+src/Database.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/Database.cpp.i
+.PHONY : src/Database.cpp.i
+
+src/Database.s: src/Database.cpp.s
+.PHONY : src/Database.s
+
+# target to generate assembly for a file
+src/Database.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/Database.cpp.s
+.PHONY : src/Database.cpp.s
+
+src/GuiApp.o: src/GuiApp.cpp.o
+.PHONY : src/GuiApp.o
+
+# target to build an object file
+src/GuiApp.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/GuiApp.cpp.o
+.PHONY : src/GuiApp.cpp.o
+
+src/GuiApp.i: src/GuiApp.cpp.i
+.PHONY : src/GuiApp.i
+
+# target to preprocess a source file
+src/GuiApp.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/GuiApp.cpp.i
+.PHONY : src/GuiApp.cpp.i
+
+src/GuiApp.s: src/GuiApp.cpp.s
+.PHONY : src/GuiApp.s
+
+# target to generate assembly for a file
+src/GuiApp.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/GuiApp.cpp.s
+.PHONY : src/GuiApp.cpp.s
+
+src/MapWidget.o: src/MapWidget.cpp.o
+.PHONY : src/MapWidget.o
+
+# target to build an object file
+src/MapWidget.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/MapWidget.cpp.o
+.PHONY : src/MapWidget.cpp.o
+
+src/MapWidget.i: src/MapWidget.cpp.i
+.PHONY : src/MapWidget.i
+
+# target to preprocess a source file
+src/MapWidget.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/MapWidget.cpp.i
+.PHONY : src/MapWidget.cpp.i
+
+src/MapWidget.s: src/MapWidget.cpp.s
+.PHONY : src/MapWidget.s
+
+# target to generate assembly for a file
+src/MapWidget.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/MapWidget.cpp.s
+.PHONY : src/MapWidget.cpp.s
+
+src/PayloadParser.o: src/PayloadParser.cpp.o
+.PHONY : src/PayloadParser.o
+
+# target to build an object file
+src/PayloadParser.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/PayloadParser.cpp.o
+.PHONY : src/PayloadParser.cpp.o
+
+src/PayloadParser.i: src/PayloadParser.cpp.i
+.PHONY : src/PayloadParser.i
+
+# target to preprocess a source file
+src/PayloadParser.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/PayloadParser.cpp.i
+.PHONY : src/PayloadParser.cpp.i
+
+src/PayloadParser.s: src/PayloadParser.cpp.s
+.PHONY : src/PayloadParser.s
+
+# target to generate assembly for a file
+src/PayloadParser.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/PayloadParser.cpp.s
+.PHONY : src/PayloadParser.cpp.s
+
+src/PlotPanel.o: src/PlotPanel.cpp.o
+.PHONY : src/PlotPanel.o
+
+# target to build an object file
+src/PlotPanel.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/PlotPanel.cpp.o
+.PHONY : src/PlotPanel.cpp.o
+
+src/PlotPanel.i: src/PlotPanel.cpp.i
+.PHONY : src/PlotPanel.i
+
+# target to preprocess a source file
+src/PlotPanel.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/PlotPanel.cpp.i
+.PHONY : src/PlotPanel.cpp.i
+
+src/PlotPanel.s: src/PlotPanel.cpp.s
+.PHONY : src/PlotPanel.s
+
+# target to generate assembly for a file
+src/PlotPanel.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/PlotPanel.cpp.s
+.PHONY : src/PlotPanel.cpp.s
+
+src/TelemetryHelpers.o: src/TelemetryHelpers.cpp.o
+.PHONY : src/TelemetryHelpers.o
+
+# target to build an object file
+src/TelemetryHelpers.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/TelemetryHelpers.cpp.o
+.PHONY : src/TelemetryHelpers.cpp.o
+
+src/TelemetryHelpers.i: src/TelemetryHelpers.cpp.i
+.PHONY : src/TelemetryHelpers.i
+
+# target to preprocess a source file
+src/TelemetryHelpers.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/TelemetryHelpers.cpp.i
+.PHONY : src/TelemetryHelpers.cpp.i
+
+src/TelemetryHelpers.s: src/TelemetryHelpers.cpp.s
+.PHONY : src/TelemetryHelpers.s
+
+# target to generate assembly for a file
+src/TelemetryHelpers.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/TelemetryHelpers.cpp.s
+.PHONY : src/TelemetryHelpers.cpp.s
+
+src/TelemetryModel.o: src/TelemetryModel.cpp.o
+.PHONY : src/TelemetryModel.o
+
+# target to build an object file
+src/TelemetryModel.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/TelemetryModel.cpp.o
+.PHONY : src/TelemetryModel.cpp.o
+
+src/TelemetryModel.i: src/TelemetryModel.cpp.i
+.PHONY : src/TelemetryModel.i
+
+# target to preprocess a source file
+src/TelemetryModel.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/TelemetryModel.cpp.i
+.PHONY : src/TelemetryModel.cpp.i
+
+src/TelemetryModel.s: src/TelemetryModel.cpp.s
+.PHONY : src/TelemetryModel.s
+
+# target to generate assembly for a file
+src/TelemetryModel.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/TelemetryModel.cpp.s
+.PHONY : src/TelemetryModel.cpp.s
+
+src/TelemetryPanel.o: src/TelemetryPanel.cpp.o
+.PHONY : src/TelemetryPanel.o
+
+# target to build an object file
+src/TelemetryPanel.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/TelemetryPanel.cpp.o
+.PHONY : src/TelemetryPanel.cpp.o
+
+src/TelemetryPanel.i: src/TelemetryPanel.cpp.i
+.PHONY : src/TelemetryPanel.i
+
+# target to preprocess a source file
+src/TelemetryPanel.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/TelemetryPanel.cpp.i
+.PHONY : src/TelemetryPanel.cpp.i
+
+src/TelemetryPanel.s: src/TelemetryPanel.cpp.s
+.PHONY : src/TelemetryPanel.s
+
+# target to generate assembly for a file
+src/TelemetryPanel.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/TelemetryPanel.cpp.s
+.PHONY : src/TelemetryPanel.cpp.s
+
+src/TelemetryServer.o: src/TelemetryServer.cpp.o
+.PHONY : src/TelemetryServer.o
+
+# target to build an object file
+src/TelemetryServer.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/TelemetryServer.cpp.o
+.PHONY : src/TelemetryServer.cpp.o
+
+src/TelemetryServer.i: src/TelemetryServer.cpp.i
+.PHONY : src/TelemetryServer.i
+
+# target to preprocess a source file
+src/TelemetryServer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/TelemetryServer.cpp.i
+.PHONY : src/TelemetryServer.cpp.i
+
+src/TelemetryServer.s: src/TelemetryServer.cpp.s
+.PHONY : src/TelemetryServer.s
+
+# target to generate assembly for a file
+src/TelemetryServer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/TelemetryServer.cpp.s
+.PHONY : src/TelemetryServer.cpp.s
+
+src/TileStorage.o: src/TileStorage.cpp.o
+.PHONY : src/TileStorage.o
+
+# target to build an object file
+src/TileStorage.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/TileStorage.cpp.o
+.PHONY : src/TileStorage.cpp.o
+
+src/TileStorage.i: src/TileStorage.cpp.i
+.PHONY : src/TileStorage.i
+
+# target to preprocess a source file
+src/TileStorage.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/TileStorage.cpp.i
+.PHONY : src/TileStorage.cpp.i
+
+src/TileStorage.s: src/TileStorage.cpp.s
+.PHONY : src/TileStorage.s
+
+# target to generate assembly for a file
+src/TileStorage.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/TileStorage.cpp.s
+.PHONY : src/TileStorage.cpp.s
+
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
 
@@ -460,6 +724,39 @@ help:
 	@echo "... external/implot/implot_items.o"
 	@echo "... external/implot/implot_items.i"
 	@echo "... external/implot/implot_items.s"
+	@echo "... src/CurlUtils.o"
+	@echo "... src/CurlUtils.i"
+	@echo "... src/CurlUtils.s"
+	@echo "... src/Database.o"
+	@echo "... src/Database.i"
+	@echo "... src/Database.s"
+	@echo "... src/GuiApp.o"
+	@echo "... src/GuiApp.i"
+	@echo "... src/GuiApp.s"
+	@echo "... src/MapWidget.o"
+	@echo "... src/MapWidget.i"
+	@echo "... src/MapWidget.s"
+	@echo "... src/PayloadParser.o"
+	@echo "... src/PayloadParser.i"
+	@echo "... src/PayloadParser.s"
+	@echo "... src/PlotPanel.o"
+	@echo "... src/PlotPanel.i"
+	@echo "... src/PlotPanel.s"
+	@echo "... src/TelemetryHelpers.o"
+	@echo "... src/TelemetryHelpers.i"
+	@echo "... src/TelemetryHelpers.s"
+	@echo "... src/TelemetryModel.o"
+	@echo "... src/TelemetryModel.i"
+	@echo "... src/TelemetryModel.s"
+	@echo "... src/TelemetryPanel.o"
+	@echo "... src/TelemetryPanel.i"
+	@echo "... src/TelemetryPanel.s"
+	@echo "... src/TelemetryServer.o"
+	@echo "... src/TelemetryServer.i"
+	@echo "... src/TelemetryServer.s"
+	@echo "... src/TileStorage.o"
+	@echo "... src/TileStorage.i"
+	@echo "... src/TileStorage.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
