@@ -187,22 +187,26 @@ CMakeFiles/main.dir/src/MapWidget.cpp.o: \
  /usr/include/c++/13/bits/stl_multimap.h \
  /usr/include/c++/13/bits/erase_if.h /usr/include/c++/13/mutex \
  /usr/include/c++/13/bits/std_mutex.h \
- /usr/include/c++/13/bits/unique_lock.h /usr/include/c++/13/set \
- /usr/include/c++/13/bits/stl_set.h \
+ /usr/include/c++/13/bits/unique_lock.h /usr/include/c++/13/optional \
+ /usr/include/c++/13/bits/enable_special_members.h \
+ /usr/include/c++/13/set /usr/include/c++/13/bits/stl_set.h \
  /usr/include/c++/13/bits/stl_multiset.h /usr/include/c++/13/thread \
  /usr/include/c++/13/bits/std_thread.h \
  /usr/include/c++/13/bits/this_thread_sleep.h /usr/include/c++/13/vector \
  /usr/include/c++/13/bits/stl_vector.h \
  /usr/include/c++/13/bits/stl_bvector.h \
  /usr/include/c++/13/bits/vector.tcc \
+ /home/avadik/Programming/Visual/Backend-GPS/include/Database.h \
+ /usr/include/postgresql/libpq-fe.h \
+ /usr/include/postgresql/postgres_ext.h \
+ /usr/include/postgresql/pg_config_ext.h \
+ /home/avadik/Programming/Visual/Backend-GPS/include/TelemetryTypes.h \
+ /home/avadik/Programming/Visual/Backend-GPS/include/HeatMap.h \
  /home/avadik/Programming/Visual/Backend-GPS/external/imgui/imgui.h \
  /home/avadik/Programming/Visual/Backend-GPS/external/imgui/imconfig.h \
  /usr/lib/gcc/x86_64-linux-gnu/13/include/float.h /usr/include/string.h \
- /usr/include/strings.h /usr/include/assert.h \
- /home/avadik/Programming/Visual/Backend-GPS/include/TelemetryTypes.h \
- /usr/include/c++/13/optional \
- /usr/include/c++/13/bits/enable_special_members.h \
- /usr/include/c++/13/chrono /usr/include/c++/13/cmath /usr/include/math.h \
+ /usr/include/strings.h /usr/include/assert.h /usr/include/c++/13/chrono \
+ /usr/include/c++/13/cmath /usr/include/math.h \
  /usr/include/x86_64-linux-gnu/bits/math-vector.h \
  /usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h \
  /usr/include/x86_64-linux-gnu/bits/flt-eval-method.h \
@@ -228,7 +232,7 @@ CMakeFiles/main.dir/src/MapWidget.cpp.o: \
  /home/avadik/Programming/Visual/Backend-GPS/include/CurlUtils.h \
  /home/avadik/Programming/Visual/Backend-GPS/include/TileStorage.h \
  /home/avadik/Programming/Visual/Backend-GPS/external/implot/implot.h \
- /home/avadik/Programming/Visual/Backend-GPS/src/stb_image.h \
+ /home/avadik/Programming/Visual/Backend-GPS/external/stb_image.h \
  /usr/include/c++/13/stdlib.h \
  /usr/lib/gcc/x86_64-linux-gnu/13/include/limits.h \
  /usr/lib/gcc/x86_64-linux-gnu/13/include/syslimits.h \

@@ -192,6 +192,7 @@ CMakeFiles/main.dir/src/CurlUtils.cpp.o: /home/avadik/Programming/Visual/Backend
 
 CMakeFiles/main.dir/src/Database.cpp.o: /home/avadik/Programming/Visual/Backend-GPS/src/Database.cpp \
   /home/avadik/Programming/Visual/Backend-GPS/include/Database.h \
+  /home/avadik/Programming/Visual/Backend-GPS/include/HeatMap.h \
   /home/avadik/Programming/Visual/Backend-GPS/include/TelemetryTypes.h \
   /usr/include/alloca.h \
   /usr/include/asm-generic/errno-base.h \
@@ -421,6 +422,7 @@ CMakeFiles/main.dir/src/GuiApp.cpp.o: /home/avadik/Programming/Visual/Backend-GP
   /home/avadik/Programming/Visual/Backend-GPS/external/implot/implot.h \
   /home/avadik/Programming/Visual/Backend-GPS/include/Database.h \
   /home/avadik/Programming/Visual/Backend-GPS/include/GuiApp.h \
+  /home/avadik/Programming/Visual/Backend-GPS/include/HeatMap.h \
   /home/avadik/Programming/Visual/Backend-GPS/include/MapWidget.h \
   /home/avadik/Programming/Visual/Backend-GPS/include/TelemetryModel.h \
   /home/avadik/Programming/Visual/Backend-GPS/include/TelemetryPanel.h \
@@ -858,15 +860,158 @@ CMakeFiles/main.dir/src/GuiApp.cpp.o: /home/avadik/Programming/Visual/Backend-GP
   /usr/lib/gcc/x86_64-linux-gnu/13/include/xsavesintrin.h \
   /usr/lib/gcc/x86_64-linux-gnu/13/include/xtestintrin.h
 
+CMakeFiles/main.dir/src/HeatMap.cpp.o: /home/avadik/Programming/Visual/Backend-GPS/src/HeatMap.cpp \
+  /home/avadik/Programming/Visual/Backend-GPS/include/HeatMap.h \
+  /usr/include/alloca.h \
+  /usr/include/c++/13/algorithm \
+  /usr/include/c++/13/backward/binders.h \
+  /usr/include/c++/13/bit \
+  /usr/include/c++/13/bits/algorithmfwd.h \
+  /usr/include/c++/13/bits/alloc_traits.h \
+  /usr/include/c++/13/bits/allocator.h \
+  /usr/include/c++/13/bits/concept_check.h \
+  /usr/include/c++/13/bits/cpp_type_traits.h \
+  /usr/include/c++/13/bits/exception.h \
+  /usr/include/c++/13/bits/exception_defines.h \
+  /usr/include/c++/13/bits/functexcept.h \
+  /usr/include/c++/13/bits/functional_hash.h \
+  /usr/include/c++/13/bits/hash_bytes.h \
+  /usr/include/c++/13/bits/invoke.h \
+  /usr/include/c++/13/bits/memory_resource.h \
+  /usr/include/c++/13/bits/memoryfwd.h \
+  /usr/include/c++/13/bits/move.h \
+  /usr/include/c++/13/bits/new_allocator.h \
+  /usr/include/c++/13/bits/predefined_ops.h \
+  /usr/include/c++/13/bits/ptr_traits.h \
+  /usr/include/c++/13/bits/range_access.h \
+  /usr/include/c++/13/bits/refwrap.h \
+  /usr/include/c++/13/bits/requires_hosted.h \
+  /usr/include/c++/13/bits/specfun.h \
+  /usr/include/c++/13/bits/std_abs.h \
+  /usr/include/c++/13/bits/stl_algo.h \
+  /usr/include/c++/13/bits/stl_algobase.h \
+  /usr/include/c++/13/bits/stl_bvector.h \
+  /usr/include/c++/13/bits/stl_construct.h \
+  /usr/include/c++/13/bits/stl_function.h \
+  /usr/include/c++/13/bits/stl_heap.h \
+  /usr/include/c++/13/bits/stl_iterator.h \
+  /usr/include/c++/13/bits/stl_iterator_base_funcs.h \
+  /usr/include/c++/13/bits/stl_iterator_base_types.h \
+  /usr/include/c++/13/bits/stl_pair.h \
+  /usr/include/c++/13/bits/stl_tempbuf.h \
+  /usr/include/c++/13/bits/stl_uninitialized.h \
+  /usr/include/c++/13/bits/stl_vector.h \
+  /usr/include/c++/13/bits/uniform_int_dist.h \
+  /usr/include/c++/13/bits/uses_allocator.h \
+  /usr/include/c++/13/bits/uses_allocator_args.h \
+  /usr/include/c++/13/bits/utility.h \
+  /usr/include/c++/13/bits/vector.tcc \
+  /usr/include/c++/13/cmath \
+  /usr/include/c++/13/cstddef \
+  /usr/include/c++/13/cstdint \
+  /usr/include/c++/13/cstdlib \
+  /usr/include/c++/13/debug/assertions.h \
+  /usr/include/c++/13/debug/debug.h \
+  /usr/include/c++/13/ext/alloc_traits.h \
+  /usr/include/c++/13/ext/numeric_traits.h \
+  /usr/include/c++/13/ext/type_traits.h \
+  /usr/include/c++/13/initializer_list \
+  /usr/include/c++/13/limits \
+  /usr/include/c++/13/new \
+  /usr/include/c++/13/pstl/execution_defs.h \
+  /usr/include/c++/13/pstl/glue_algorithm_defs.h \
+  /usr/include/c++/13/pstl/pstl_config.h \
+  /usr/include/c++/13/tr1/bessel_function.tcc \
+  /usr/include/c++/13/tr1/beta_function.tcc \
+  /usr/include/c++/13/tr1/ell_integral.tcc \
+  /usr/include/c++/13/tr1/exp_integral.tcc \
+  /usr/include/c++/13/tr1/gamma.tcc \
+  /usr/include/c++/13/tr1/hypergeometric.tcc \
+  /usr/include/c++/13/tr1/legendre_function.tcc \
+  /usr/include/c++/13/tr1/modified_bessel_func.tcc \
+  /usr/include/c++/13/tr1/poly_hermite.tcc \
+  /usr/include/c++/13/tr1/poly_laguerre.tcc \
+  /usr/include/c++/13/tr1/riemann_zeta.tcc \
+  /usr/include/c++/13/tr1/special_function_util.h \
+  /usr/include/c++/13/tuple \
+  /usr/include/c++/13/type_traits \
+  /usr/include/c++/13/vector \
+  /usr/include/endian.h \
+  /usr/include/features-time64.h \
+  /usr/include/features.h \
+  /usr/include/math.h \
+  /usr/include/stdc-predef.h \
+  /usr/include/stdint.h \
+  /usr/include/stdlib.h \
+  /usr/include/x86_64-linux-gnu/bits/atomic_wide_counter.h \
+  /usr/include/x86_64-linux-gnu/bits/byteswap.h \
+  /usr/include/x86_64-linux-gnu/bits/endian.h \
+  /usr/include/x86_64-linux-gnu/bits/endianness.h \
+  /usr/include/x86_64-linux-gnu/bits/floatn-common.h \
+  /usr/include/x86_64-linux-gnu/bits/floatn.h \
+  /usr/include/x86_64-linux-gnu/bits/flt-eval-method.h \
+  /usr/include/x86_64-linux-gnu/bits/fp-fast.h \
+  /usr/include/x86_64-linux-gnu/bits/fp-logb.h \
+  /usr/include/x86_64-linux-gnu/bits/iscanonical.h \
+  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
+  /usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h \
+  /usr/include/x86_64-linux-gnu/bits/long-double.h \
+  /usr/include/x86_64-linux-gnu/bits/math-vector.h \
+  /usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h \
+  /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h \
+  /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
+  /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h \
+  /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h \
+  /usr/include/x86_64-linux-gnu/bits/select.h \
+  /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
+  /usr/include/x86_64-linux-gnu/bits/stdint-least.h \
+  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
+  /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
+  /usr/include/x86_64-linux-gnu/bits/struct_mutex.h \
+  /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h \
+  /usr/include/x86_64-linux-gnu/bits/thread-shared-types.h \
+  /usr/include/x86_64-linux-gnu/bits/time64.h \
+  /usr/include/x86_64-linux-gnu/bits/timesize.h \
+  /usr/include/x86_64-linux-gnu/bits/types.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/clock_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/clockid_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/locale_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/sigset_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h \
+  /usr/include/x86_64-linux-gnu/bits/types/time_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/timer_t.h \
+  /usr/include/x86_64-linux-gnu/bits/typesizes.h \
+  /usr/include/x86_64-linux-gnu/bits/uintn-identity.h \
+  /usr/include/x86_64-linux-gnu/bits/waitflags.h \
+  /usr/include/x86_64-linux-gnu/bits/waitstatus.h \
+  /usr/include/x86_64-linux-gnu/bits/wchar.h \
+  /usr/include/x86_64-linux-gnu/bits/wordsize.h \
+  /usr/include/x86_64-linux-gnu/c++/13/bits/c++allocator.h \
+  /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h \
+  /usr/include/x86_64-linux-gnu/c++/13/bits/cpu_defines.h \
+  /usr/include/x86_64-linux-gnu/c++/13/bits/os_defines.h \
+  /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
+  /usr/include/x86_64-linux-gnu/gnu/stubs.h \
+  /usr/include/x86_64-linux-gnu/sys/cdefs.h \
+  /usr/include/x86_64-linux-gnu/sys/select.h \
+  /usr/include/x86_64-linux-gnu/sys/types.h \
+  /usr/lib/gcc/x86_64-linux-gnu/13/include/stddef.h \
+  /usr/lib/gcc/x86_64-linux-gnu/13/include/stdint.h
+
 CMakeFiles/main.dir/src/MapWidget.cpp.o: /home/avadik/Programming/Visual/Backend-GPS/src/MapWidget.cpp \
   /home/avadik/Programming/Visual/Backend-GPS/external/imgui/imconfig.h \
   /home/avadik/Programming/Visual/Backend-GPS/external/imgui/imgui.h \
   /home/avadik/Programming/Visual/Backend-GPS/external/implot/implot.h \
+  /home/avadik/Programming/Visual/Backend-GPS/external/stb_image.h \
   /home/avadik/Programming/Visual/Backend-GPS/include/CurlUtils.h \
+  /home/avadik/Programming/Visual/Backend-GPS/include/Database.h \
+  /home/avadik/Programming/Visual/Backend-GPS/include/HeatMap.h \
   /home/avadik/Programming/Visual/Backend-GPS/include/MapWidget.h \
   /home/avadik/Programming/Visual/Backend-GPS/include/TelemetryTypes.h \
   /home/avadik/Programming/Visual/Backend-GPS/include/TileStorage.h \
-  /home/avadik/Programming/Visual/Backend-GPS/src/stb_image.h \
   /usr/include/GL/gl.h \
   /usr/include/GL/glew.h \
   /usr/include/GL/glu.h \
@@ -1046,6 +1191,9 @@ CMakeFiles/main.dir/src/MapWidget.cpp.o: /home/avadik/Programming/Visual/Backend
   /usr/include/linux/limits.h \
   /usr/include/locale.h \
   /usr/include/math.h \
+  /usr/include/postgresql/libpq-fe.h \
+  /usr/include/postgresql/pg_config_ext.h \
+  /usr/include/postgresql/postgres_ext.h \
   /usr/include/pthread.h \
   /usr/include/sched.h \
   /usr/include/stdc-predef.h \
@@ -1843,6 +1991,7 @@ CMakeFiles/main.dir/src/TelemetryHelpers.cpp.o: /home/avadik/Programming/Visual/
 
 CMakeFiles/main.dir/src/TelemetryModel.cpp.o: /home/avadik/Programming/Visual/Backend-GPS/src/TelemetryModel.cpp \
   /home/avadik/Programming/Visual/Backend-GPS/include/Database.h \
+  /home/avadik/Programming/Visual/Backend-GPS/include/HeatMap.h \
   /home/avadik/Programming/Visual/Backend-GPS/include/TelemetryHelpers.h \
   /home/avadik/Programming/Visual/Backend-GPS/include/TelemetryModel.h \
   /home/avadik/Programming/Visual/Backend-GPS/include/TelemetryTypes.h \
@@ -2043,6 +2192,7 @@ CMakeFiles/main.dir/src/TelemetryPanel.cpp.o: /home/avadik/Programming/Visual/Ba
   /home/avadik/Programming/Visual/Backend-GPS/external/imgui/imconfig.h \
   /home/avadik/Programming/Visual/Backend-GPS/external/imgui/imgui.h \
   /home/avadik/Programming/Visual/Backend-GPS/include/Database.h \
+  /home/avadik/Programming/Visual/Backend-GPS/include/HeatMap.h \
   /home/avadik/Programming/Visual/Backend-GPS/include/PlotPanel.h \
   /home/avadik/Programming/Visual/Backend-GPS/include/TelemetryModel.h \
   /home/avadik/Programming/Visual/Backend-GPS/include/TelemetryPanel.h \
@@ -2246,6 +2396,7 @@ CMakeFiles/main.dir/src/TelemetryPanel.cpp.o: /home/avadik/Programming/Visual/Ba
 
 CMakeFiles/main.dir/src/TelemetryServer.cpp.o: /home/avadik/Programming/Visual/Backend-GPS/src/TelemetryServer.cpp \
   /home/avadik/Programming/Visual/Backend-GPS/include/Database.h \
+  /home/avadik/Programming/Visual/Backend-GPS/include/HeatMap.h \
   /home/avadik/Programming/Visual/Backend-GPS/include/PayloadParser.h \
   /home/avadik/Programming/Visual/Backend-GPS/include/TelemetryModel.h \
   /home/avadik/Programming/Visual/Backend-GPS/include/TelemetryServer.h \
@@ -2734,6 +2885,7 @@ CMakeFiles/main.dir/src/TileStorage.cpp.o: /home/avadik/Programming/Visual/Backe
 CMakeFiles/main.dir/src/main.cpp.o: /home/avadik/Programming/Visual/Backend-GPS/src/main.cpp \
   /home/avadik/Programming/Visual/Backend-GPS/include/Database.h \
   /home/avadik/Programming/Visual/Backend-GPS/include/GuiApp.h \
+  /home/avadik/Programming/Visual/Backend-GPS/include/HeatMap.h \
   /home/avadik/Programming/Visual/Backend-GPS/include/TelemetryModel.h \
   /home/avadik/Programming/Visual/Backend-GPS/include/TelemetryServer.h \
   /home/avadik/Programming/Visual/Backend-GPS/include/TelemetryTypes.h \
@@ -3238,6 +3390,10 @@ CMakeFiles/main.dir/src/main.cpp.o: /home/avadik/Programming/Visual/Backend-GPS/
 
 /usr/include/c++/13/bits/stl_uninitialized.h:
 
+/usr/include/nlohmann/detail/hash.hpp:
+
+/usr/include/c++/13/bits/new_allocator.h:
+
 /usr/lib/gcc/x86_64-linux-gnu/13/include/wbnoinvdintrin.h:
 
 /usr/include/c++/13/bits/std_mutex.h:
@@ -3428,6 +3584,8 @@ CMakeFiles/main.dir/src/main.cpp.o: /home/avadik/Programming/Visual/Backend-GPS/
 
 /usr/include/c++/13/bits/alloc_traits.h:
 
+/usr/include/stdlib.h:
+
 /usr/include/x86_64-linux-gnu/bits/libc-header-start.h:
 
 /usr/include/c++/13/bits/stl_iterator.h:
@@ -3570,6 +3728,12 @@ CMakeFiles/main.dir/src/main.cpp.o: /home/avadik/Programming/Visual/Backend-GPS/
 
 /usr/include/locale.h:
 
+/usr/include/nlohmann/detail/exceptions.hpp:
+
+/usr/include/x86_64-linux-gnu/bits/stdlib-float.h:
+
+/usr/include/wchar.h:
+
 /usr/lib/gcc/x86_64-linux-gnu/13/include/enqcmdintrin.h:
 
 /usr/include/x86_64-linux-gnu/asm/errno.h:
@@ -3579,8 +3743,6 @@ CMakeFiles/main.dir/src/main.cpp.o: /home/avadik/Programming/Visual/Backend-GPS/
 /usr/include/x86_64-linux-gnu/c++/13/bits/os_defines.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/FILE.h:
-
-/usr/include/stdlib.h:
 
 /usr/include/x86_64-linux-gnu/bits/atomic_wide_counter.h:
 
@@ -3623,10 +3785,6 @@ CMakeFiles/main.dir/src/main.cpp.o: /home/avadik/Programming/Visual/Backend-GPS/
 /usr/include/x86_64-linux-gnu/bits/long-double.h:
 
 /usr/include/x86_64-linux-gnu/bits/socket.h:
-
-/usr/include/c++/13/bits/new_allocator.h:
-
-/usr/include/nlohmann/detail/hash.hpp:
 
 /usr/include/c++/13/bits/locale_facets.h:
 
@@ -3727,6 +3885,8 @@ CMakeFiles/main.dir/src/main.cpp.o: /home/avadik/Programming/Visual/Backend-GPS/
 /usr/include/x86_64-linux-gnu/bits/confname.h:
 
 /usr/include/SDL2/SDL_filesystem.h:
+
+/home/avadik/Programming/Visual/Backend-GPS/include/HeatMap.h:
 
 /usr/include/SDL2/SDL_haptic.h:
 
@@ -4100,15 +4260,17 @@ CMakeFiles/main.dir/src/main.cpp.o: /home/avadik/Programming/Visual/Backend-GPS/
 
 /usr/lib/gcc/x86_64-linux-gnu/13/include/xtestintrin.h:
 
+/home/avadik/Programming/Visual/Backend-GPS/src/HeatMap.cpp:
+
 /home/avadik/Programming/Visual/Backend-GPS/src/MapWidget.cpp:
+
+/home/avadik/Programming/Visual/Backend-GPS/external/stb_image.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_osockaddr.h:
 
 /usr/lib/gcc/x86_64-linux-gnu/13/include/clwbintrin.h:
 
 /home/avadik/Programming/Visual/Backend-GPS/include/TileStorage.h:
-
-/home/avadik/Programming/Visual/Backend-GPS/src/stb_image.h:
 
 /usr/include/c++/13/chrono:
 
@@ -4137,9 +4299,3 @@ CMakeFiles/main.dir/src/main.cpp.o: /home/avadik/Programming/Visual/Backend-GPS/
 /usr/include/nlohmann/detail/abi_macros.hpp:
 
 /usr/include/nlohmann/detail/conversions/to_json.hpp:
-
-/usr/include/x86_64-linux-gnu/bits/stdlib-float.h:
-
-/usr/include/wchar.h:
-
-/usr/include/nlohmann/detail/exceptions.hpp:

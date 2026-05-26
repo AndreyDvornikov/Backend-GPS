@@ -11,6 +11,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/avadik/Programming/Visual/Backend-GPS/src/CurlUtils.cpp" "CMakeFiles/main.dir/src/CurlUtils.cpp.o" "gcc" "CMakeFiles/main.dir/src/CurlUtils.cpp.o.d"
   "/home/avadik/Programming/Visual/Backend-GPS/src/Database.cpp" "CMakeFiles/main.dir/src/Database.cpp.o" "gcc" "CMakeFiles/main.dir/src/Database.cpp.o.d"
   "/home/avadik/Programming/Visual/Backend-GPS/src/GuiApp.cpp" "CMakeFiles/main.dir/src/GuiApp.cpp.o" "gcc" "CMakeFiles/main.dir/src/GuiApp.cpp.o.d"
+  "/home/avadik/Programming/Visual/Backend-GPS/src/HeatMap.cpp" "CMakeFiles/main.dir/src/HeatMap.cpp.o" "gcc" "CMakeFiles/main.dir/src/HeatMap.cpp.o.d"
   "/home/avadik/Programming/Visual/Backend-GPS/src/MapWidget.cpp" "CMakeFiles/main.dir/src/MapWidget.cpp.o" "gcc" "CMakeFiles/main.dir/src/MapWidget.cpp.o.d"
   "/home/avadik/Programming/Visual/Backend-GPS/src/PayloadParser.cpp" "CMakeFiles/main.dir/src/PayloadParser.cpp.o" "gcc" "CMakeFiles/main.dir/src/PayloadParser.cpp.o.d"
   "/home/avadik/Programming/Visual/Backend-GPS/src/PlotPanel.cpp" "CMakeFiles/main.dir/src/PlotPanel.cpp.o" "gcc" "CMakeFiles/main.dir/src/PlotPanel.cpp.o.d"

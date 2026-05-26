@@ -157,6 +157,7 @@ CMakeFiles/main.dir/src/main.cpp.o: \
  /home/avadik/Programming/Visual/Backend-GPS/include/TelemetryTypes.h \
  /usr/include/c++/13/optional \
  /usr/include/c++/13/bits/enable_special_members.h \
+ /home/avadik/Programming/Visual/Backend-GPS/include/HeatMap.h \
  /home/avadik/Programming/Visual/Backend-GPS/include/GuiApp.h \
  /home/avadik/Programming/Visual/Backend-GPS/include/TelemetryModel.h \
  /usr/include/c++/13/unordered_map \

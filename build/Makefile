@@ -467,6 +467,30 @@ src/GuiApp.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/GuiApp.cpp.s
 .PHONY : src/GuiApp.cpp.s
 
+src/HeatMap.o: src/HeatMap.cpp.o
+.PHONY : src/HeatMap.o
+
+# target to build an object file
+src/HeatMap.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/HeatMap.cpp.o
+.PHONY : src/HeatMap.cpp.o
+
+src/HeatMap.i: src/HeatMap.cpp.i
+.PHONY : src/HeatMap.i
+
+# target to preprocess a source file
+src/HeatMap.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/HeatMap.cpp.i
+.PHONY : src/HeatMap.cpp.i
+
+src/HeatMap.s: src/HeatMap.cpp.s
+.PHONY : src/HeatMap.s
+
+# target to generate assembly for a file
+src/HeatMap.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/HeatMap.cpp.s
+.PHONY : src/HeatMap.cpp.s
+
 src/MapWidget.o: src/MapWidget.cpp.o
 .PHONY : src/MapWidget.o
 
@@ -733,6 +757,9 @@ help:
 	@echo "... src/GuiApp.o"
 	@echo "... src/GuiApp.i"
 	@echo "... src/GuiApp.s"
+	@echo "... src/HeatMap.o"
+	@echo "... src/HeatMap.i"
+	@echo "... src/HeatMap.s"
 	@echo "... src/MapWidget.o"
 	@echo "... src/MapWidget.i"
 	@echo "... src/MapWidget.s"

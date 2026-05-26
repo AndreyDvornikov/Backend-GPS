@@ -241,6 +241,123 @@ bool Database::LoadLastRows(int limit, std::vector<DbRow>& rows) {
     return true;
 }
 
+std::optional<int> Database::GetDominantPCI() {
+    std::lock_guard<std::mutex> lock(dbMutex_);
+
+    if (conn_ == nullptr) {
+        return std::nullopt;
+    }
+
+    static const char* sql =
+        "SELECT pci, COUNT(*) "
+        "FROM radar_samples "
+        "WHERE pci IS NOT NULL "
+        "GROUP BY pci "
+        "ORDER BY COUNT(*) DESC "
+        "LIMIT 1;";
+
+    PGresult* result = PQexec(conn_, sql);
+
+    if (PQresultStatus(result) != PGRES_TUPLES_OK ||
+        PQntuples(result) == 0) {
+        PQclear(result);
+        return std::nullopt;
+    }
+
+    const int pci =
+        std::atoi(PQgetvalue(result, 0, 0));
+
+    PQclear(result);
+
+    return pci;
+}
+bool Database::LoadHeatPointsForPCI(
+    int pci,
+    HeatMapMetric metric,
+    std::vector<HeatPoint>& points
+) {
+    points.clear();
+
+    std::lock_guard<std::mutex> lock(dbMutex_);
+
+    if (conn_ == nullptr) {
+        return false;
+    }
+
+    std::string metricField;
+
+    switch (metric) {
+        case HeatMapMetric::RSRP:
+            metricField = "rsrp";
+            break;
+
+        case HeatMapMetric::RSRQ:
+            metricField = "rsrq";
+            break;
+
+        case HeatMapMetric::RSSI:
+            metricField = "rssi";
+            break;
+
+        case HeatMapMetric::Altitude:
+            metricField = "altitude";
+            break;
+    }
+
+    const std::string sql =
+        "SELECT latitude, longitude, " + metricField +
+        " FROM radar_samples "
+        "WHERE pci = $1 "
+        "AND latitude IS NOT NULL "
+        "AND longitude IS NOT NULL "
+        "AND " + metricField + " IS NOT NULL ";
+    const std::string pciValue =
+        std::to_string(pci);
+
+    const char* params[1] = {
+        pciValue.c_str()
+    };
+
+    PGresult* result = PQexecParams(
+        conn_,
+        sql.c_str(),
+        1,
+        nullptr,
+        params,
+        nullptr,
+        nullptr,
+        0
+    );
+
+    if (PQresultStatus(result) != PGRES_TUPLES_OK) {
+        PQclear(result);
+        return false;
+    }
+
+    const int rows = PQntuples(result);
+
+    points.reserve(rows);
+
+    for (int i = 0; i < rows; ++i) {
+        HeatPoint point;
+
+        point.latitude =
+            std::atof(PQgetvalue(result, i, 0));
+
+        point.longitude =
+            std::atof(PQgetvalue(result, i, 1));
+
+        point.value =
+            std::atof(PQgetvalue(result, i, 2));
+
+        points.push_back(point);
+    }
+
+    PQclear(result);
+
+    return true;
+}
+
 bool Database::EnsureDatabaseExists(const std::string& host,
                                     const std::string& port,
                                     const std::string& user,

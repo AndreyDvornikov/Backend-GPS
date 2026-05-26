@@ -160,4 +160,5 @@ CMakeFiles/main.dir/src/TelemetryModel.cpp.o: \
  /usr/include/postgresql/libpq-fe.h \
  /usr/include/postgresql/postgres_ext.h \
  /usr/include/postgresql/pg_config_ext.h \
+ /home/avadik/Programming/Visual/Backend-GPS/include/HeatMap.h \
  /home/avadik/Programming/Visual/Backend-GPS/include/TelemetryHelpers.h

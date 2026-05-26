@@ -139,10 +139,24 @@ CMakeFiles/main.dir/src/MapWidget.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/main.dir/src/MapWidget.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/avadik/Programming/Visual/Backend-GPS/src/MapWidget.cpp -o CMakeFiles/main.dir/src/MapWidget.cpp.s
 
+CMakeFiles/main.dir/src/HeatMap.cpp.o: CMakeFiles/main.dir/flags.make
+CMakeFiles/main.dir/src/HeatMap.cpp.o: /home/avadik/Programming/Visual/Backend-GPS/src/HeatMap.cpp
+CMakeFiles/main.dir/src/HeatMap.cpp.o: CMakeFiles/main.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/avadik/Programming/Visual/Backend-GPS/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/main.dir/src/HeatMap.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/src/HeatMap.cpp.o -MF CMakeFiles/main.dir/src/HeatMap.cpp.o.d -o CMakeFiles/main.dir/src/HeatMap.cpp.o -c /home/avadik/Programming/Visual/Backend-GPS/src/HeatMap.cpp
+
+CMakeFiles/main.dir/src/HeatMap.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/main.dir/src/HeatMap.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/avadik/Programming/Visual/Backend-GPS/src/HeatMap.cpp > CMakeFiles/main.dir/src/HeatMap.cpp.i
+
+CMakeFiles/main.dir/src/HeatMap.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/main.dir/src/HeatMap.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/avadik/Programming/Visual/Backend-GPS/src/HeatMap.cpp -o CMakeFiles/main.dir/src/HeatMap.cpp.s
+
 CMakeFiles/main.dir/src/PayloadParser.cpp.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/src/PayloadParser.cpp.o: /home/avadik/Programming/Visual/Backend-GPS/src/PayloadParser.cpp
 CMakeFiles/main.dir/src/PayloadParser.cpp.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/avadik/Programming/Visual/Backend-GPS/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/main.dir/src/PayloadParser.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/avadik/Programming/Visual/Backend-GPS/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/main.dir/src/PayloadParser.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/src/PayloadParser.cpp.o -MF CMakeFiles/main.dir/src/PayloadParser.cpp.o.d -o CMakeFiles/main.dir/src/PayloadParser.cpp.o -c /home/avadik/Programming/Visual/Backend-GPS/src/PayloadParser.cpp
 
 CMakeFiles/main.dir/src/PayloadParser.cpp.i: cmake_force
@@ -156,7 +170,7 @@ CMakeFiles/main.dir/src/PayloadParser.cpp.s: cmake_force
 CMakeFiles/main.dir/src/PlotPanel.cpp.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/src/PlotPanel.cpp.o: /home/avadik/Programming/Visual/Backend-GPS/src/PlotPanel.cpp
 CMakeFiles/main.dir/src/PlotPanel.cpp.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/avadik/Programming/Visual/Backend-GPS/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/main.dir/src/PlotPanel.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/avadik/Programming/Visual/Backend-GPS/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/main.dir/src/PlotPanel.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/src/PlotPanel.cpp.o -MF CMakeFiles/main.dir/src/PlotPanel.cpp.o.d -o CMakeFiles/main.dir/src/PlotPanel.cpp.o -c /home/avadik/Programming/Visual/Backend-GPS/src/PlotPanel.cpp
 
 CMakeFiles/main.dir/src/PlotPanel.cpp.i: cmake_force
@@ -170,7 +184,7 @@ CMakeFiles/main.dir/src/PlotPanel.cpp.s: cmake_force
 CMakeFiles/main.dir/src/TelemetryHelpers.cpp.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/src/TelemetryHelpers.cpp.o: /home/avadik/Programming/Visual/Backend-GPS/src/TelemetryHelpers.cpp
 CMakeFiles/main.dir/src/TelemetryHelpers.cpp.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/avadik/Programming/Visual/Backend-GPS/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/main.dir/src/TelemetryHelpers.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/avadik/Programming/Visual/Backend-GPS/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/main.dir/src/TelemetryHelpers.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/src/TelemetryHelpers.cpp.o -MF CMakeFiles/main.dir/src/TelemetryHelpers.cpp.o.d -o CMakeFiles/main.dir/src/TelemetryHelpers.cpp.o -c /home/avadik/Programming/Visual/Backend-GPS/src/TelemetryHelpers.cpp
 
 CMakeFiles/main.dir/src/TelemetryHelpers.cpp.i: cmake_force
@@ -184,7 +198,7 @@ CMakeFiles/main.dir/src/TelemetryHelpers.cpp.s: cmake_force
 CMakeFiles/main.dir/src/TelemetryModel.cpp.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/src/TelemetryModel.cpp.o: /home/avadik/Programming/Visual/Backend-GPS/src/TelemetryModel.cpp
 CMakeFiles/main.dir/src/TelemetryModel.cpp.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/avadik/Programming/Visual/Backend-GPS/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/main.dir/src/TelemetryModel.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/avadik/Programming/Visual/Backend-GPS/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/main.dir/src/TelemetryModel.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/src/TelemetryModel.cpp.o -MF CMakeFiles/main.dir/src/TelemetryModel.cpp.o.d -o CMakeFiles/main.dir/src/TelemetryModel.cpp.o -c /home/avadik/Programming/Visual/Backend-GPS/src/TelemetryModel.cpp
 
 CMakeFiles/main.dir/src/TelemetryModel.cpp.i: cmake_force
@@ -198,7 +212,7 @@ CMakeFiles/main.dir/src/TelemetryModel.cpp.s: cmake_force
 CMakeFiles/main.dir/src/TelemetryPanel.cpp.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/src/TelemetryPanel.cpp.o: /home/avadik/Programming/Visual/Backend-GPS/src/TelemetryPanel.cpp
 CMakeFiles/main.dir/src/TelemetryPanel.cpp.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/avadik/Programming/Visual/Backend-GPS/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/main.dir/src/TelemetryPanel.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/avadik/Programming/Visual/Backend-GPS/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/main.dir/src/TelemetryPanel.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/src/TelemetryPanel.cpp.o -MF CMakeFiles/main.dir/src/TelemetryPanel.cpp.o.d -o CMakeFiles/main.dir/src/TelemetryPanel.cpp.o -c /home/avadik/Programming/Visual/Backend-GPS/src/TelemetryPanel.cpp
 
 CMakeFiles/main.dir/src/TelemetryPanel.cpp.i: cmake_force
@@ -212,7 +226,7 @@ CMakeFiles/main.dir/src/TelemetryPanel.cpp.s: cmake_force
 CMakeFiles/main.dir/src/TelemetryServer.cpp.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/src/TelemetryServer.cpp.o: /home/avadik/Programming/Visual/Backend-GPS/src/TelemetryServer.cpp
 CMakeFiles/main.dir/src/TelemetryServer.cpp.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/avadik/Programming/Visual/Backend-GPS/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/main.dir/src/TelemetryServer.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/avadik/Programming/Visual/Backend-GPS/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/main.dir/src/TelemetryServer.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/src/TelemetryServer.cpp.o -MF CMakeFiles/main.dir/src/TelemetryServer.cpp.o.d -o CMakeFiles/main.dir/src/TelemetryServer.cpp.o -c /home/avadik/Programming/Visual/Backend-GPS/src/TelemetryServer.cpp
 
 CMakeFiles/main.dir/src/TelemetryServer.cpp.i: cmake_force
@@ -226,7 +240,7 @@ CMakeFiles/main.dir/src/TelemetryServer.cpp.s: cmake_force
 CMakeFiles/main.dir/src/TileStorage.cpp.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/src/TileStorage.cpp.o: /home/avadik/Programming/Visual/Backend-GPS/src/TileStorage.cpp
 CMakeFiles/main.dir/src/TileStorage.cpp.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/avadik/Programming/Visual/Backend-GPS/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/main.dir/src/TileStorage.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/avadik/Programming/Visual/Backend-GPS/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/main.dir/src/TileStorage.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/src/TileStorage.cpp.o -MF CMakeFiles/main.dir/src/TileStorage.cpp.o.d -o CMakeFiles/main.dir/src/TileStorage.cpp.o -c /home/avadik/Programming/Visual/Backend-GPS/src/TileStorage.cpp
 
 CMakeFiles/main.dir/src/TileStorage.cpp.i: cmake_force
@@ -244,6 +258,7 @@ main_OBJECTS = \
 "CMakeFiles/main.dir/src/Database.cpp.o" \
 "CMakeFiles/main.dir/src/GuiApp.cpp.o" \
 "CMakeFiles/main.dir/src/MapWidget.cpp.o" \
+"CMakeFiles/main.dir/src/HeatMap.cpp.o" \
 "CMakeFiles/main.dir/src/PayloadParser.cpp.o" \
 "CMakeFiles/main.dir/src/PlotPanel.cpp.o" \
 "CMakeFiles/main.dir/src/TelemetryHelpers.cpp.o" \
@@ -260,6 +275,7 @@ main: CMakeFiles/main.dir/src/CurlUtils.cpp.o
 main: CMakeFiles/main.dir/src/Database.cpp.o
 main: CMakeFiles/main.dir/src/GuiApp.cpp.o
 main: CMakeFiles/main.dir/src/MapWidget.cpp.o
+main: CMakeFiles/main.dir/src/HeatMap.cpp.o
 main: CMakeFiles/main.dir/src/PayloadParser.cpp.o
 main: CMakeFiles/main.dir/src/PlotPanel.cpp.o
 main: CMakeFiles/main.dir/src/TelemetryHelpers.cpp.o
@@ -279,7 +295,7 @@ main: /usr/lib/x86_64-linux-gnu/libGLU.so
 main: /usr/lib/x86_64-linux-gnu/libGLEW.so
 main: libimgui.a
 main: CMakeFiles/main.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/avadik/Programming/Visual/Backend-GPS/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Linking CXX executable main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/avadik/Programming/Visual/Backend-GPS/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Linking CXX executable main"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/main.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

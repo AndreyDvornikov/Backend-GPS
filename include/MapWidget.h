@@ -10,10 +10,13 @@
 #include <filesystem>
 #include <map>
 #include <mutex>
+#include <optional>
 #include <set>
 #include <thread>
 #include <vector>
 
+#include "Database.h"
+#include "HeatMap.h"
 #include "imgui.h"
 
 #include "TelemetryTypes.h"
@@ -49,34 +52,54 @@ private:
 
     struct LoadedTile {
         TileKey key;
+        bool isHeatmap = false;
         std::vector<unsigned char> pngBytes;
+        std::vector<uint8_t> rgbaBytes;
+        int width = 0;
+        int height = 0;
         bool success = false;
+    };
+
+    struct TileRequest {
+        TileKey key;
+        bool isHeatmap = false;
     };
 
     void StartWorkers();
     void WorkerLoop();
     void UpdateCenterFromLocation(const LocationData& location);
     void QueueVisibleTiles(double tileX0, double tileY0, const ImVec2& canvasSize);
+    void QueueVisibleHeatmapTiles(double tileX0, double tileY0, const ImVec2& canvasSize);
     void ProcessReadyTiles();
     void HandleMapInteraction(const ImVec2& plotPos, const ImVec2& plotSize);
     void UpdateCenterFromTilePosition(double tileX, double tileY);
+    void EnsureHeatmapSourceData();
     GLuint CreateTextureFromPng(const std::vector<unsigned char>& pngBytes);
+    GLuint CreateTextureFromRGBA(const std::vector<uint8_t>& rgbaBytes, int width, int height);
 
     std::atomic<bool>& running_;
     std::filesystem::path cacheRoot_;
     std::map<TileKey, GLuint> tileTextures_;
+    std::map<TileKey, GLuint> heatmapTextures_;
     std::set<TileKey> inFlightTiles_;
-    std::deque<TileKey> pendingRequests_;
+    std::set<TileKey> inFlightHeatmapTiles_;
+    std::deque<TileRequest> pendingRequests_;
     std::deque<LoadedTile> readyTiles_;
     std::mutex requestMutex_;
     std::mutex readyMutex_;
     std::vector<std::thread> workers_;
+    Database database_;
+    std::vector<HeatPoint> heatPoints_;
+    std::optional<int> dominantPci_;
+    bool databaseInitialized_ = false;
+    bool heatPointsLoaded_ = false;
     double centerLat_ = 55.0;
     double centerLon_ = 82.9;
     bool followLocation_ = true;
     int zoom_ = 13;
     bool dragActive_ = false;
     ImVec2 dragStart_{};
+    HeatMapMetric heatmapMetric_ = HeatMapMetric::RSRP;
     static constexpr int kTileSize = 256;
     static constexpr int kMinZoom = 11;
     static constexpr int kMaxZoom = 18;

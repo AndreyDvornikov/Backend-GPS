@@ -5,6 +5,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/main.dir/src/Database.cpp.o.d"
   "CMakeFiles/main.dir/src/GuiApp.cpp.o"
   "CMakeFiles/main.dir/src/GuiApp.cpp.o.d"
+  "CMakeFiles/main.dir/src/HeatMap.cpp.o"
+  "CMakeFiles/main.dir/src/HeatMap.cpp.o.d"
   "CMakeFiles/main.dir/src/MapWidget.cpp.o"
   "CMakeFiles/main.dir/src/MapWidget.cpp.o.d"
   "CMakeFiles/main.dir/src/PayloadParser.cpp.o"

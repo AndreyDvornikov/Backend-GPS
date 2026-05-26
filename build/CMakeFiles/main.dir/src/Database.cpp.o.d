@@ -154,6 +154,7 @@ CMakeFiles/main.dir/src/Database.cpp.o: \
  /home/avadik/Programming/Visual/Backend-GPS/include/TelemetryTypes.h \
  /usr/include/c++/13/optional \
  /usr/include/c++/13/bits/enable_special_members.h \
+ /home/avadik/Programming/Visual/Backend-GPS/include/HeatMap.h \
  /usr/include/c++/13/algorithm /usr/include/c++/13/bits/stl_algo.h \
  /usr/include/c++/13/bits/algorithmfwd.h \
  /usr/include/c++/13/bits/stl_heap.h \

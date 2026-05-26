@@ -10,6 +10,8 @@
 #include <libpq-fe.h>
 
 #include "TelemetryTypes.h"
+#include "HeatMap.h"
+#include <optional>
 
 /// @brief Репозиторий для инициализации и чтения телеметрических записей.
 class Database {
@@ -28,6 +30,19 @@ public:
 
     /// @brief Загружает последние записи из БД в порядке возрастания времени.
     bool LoadLastRows(int limit, std::vector<DbRow>& rows);
+    /// @brief Возвращает PCI с наибольшим числом записей.
+    std::optional<int> GetDominantPCI();
+
+    /// @brief Загружает точки для построения тепловой карты.
+    ///
+    /// @param pci PCI соты.
+    /// @param metric Метрика тепловой карты.
+    /// @param points Выходной массив точек.
+    bool LoadHeatPointsForPCI(
+        int pci,
+        HeatMapMetric metric,
+        std::vector<HeatPoint>& points
+    );
 
 private:
     bool EnsureDatabaseExists(const std::string& host,

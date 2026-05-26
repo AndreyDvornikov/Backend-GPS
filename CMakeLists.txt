@@ -14,7 +14,12 @@ find_package(OpenGL REQUIRED)
 find_package(GLEW REQUIRED)
 find_package(Threads REQUIRED)
 find_package(PostgreSQL REQUIRED)
-include_directories(${GLEW_INCLUDE_DIRS} ${INCLUDE_DIR} ${PostgreSQL_INCLUDE_DIRS})
+include_directories(
+    ${GLEW_INCLUDE_DIRS}
+    ${INCLUDE_DIR}
+    ${PostgreSQL_INCLUDE_DIRS}
+    ${THIRD_PARTY_DIR}
+)
 
 add_library(imgui STATIC
     ${THIRD_PARTY_DIR}/imgui/imgui.cpp
@@ -47,6 +52,7 @@ add_executable(main
     ${SRC_DIR}/Database.cpp
     ${SRC_DIR}/GuiApp.cpp
     ${SRC_DIR}/MapWidget.cpp
+    ${SRC_DIR}/HeatMap.cpp
     ${SRC_DIR}/PayloadParser.cpp
     ${SRC_DIR}/PlotPanel.cpp
     ${SRC_DIR}/TelemetryHelpers.cpp
